@@ -1,5 +1,5 @@
 streamlit
 opencv-python-headless
-mysql-connector-python
 ultralytics
+mysql-connector-python
 numpy
