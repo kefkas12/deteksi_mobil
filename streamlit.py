@@ -46,11 +46,12 @@ def save_to_mysql(timestamp, car_count, bus_count, truck_count, total_count, tra
     # )
     connection = mysql.connector.connect(
         host='srv1151.hstgr.io',
-        port='3306',
-        user='u860014930_vehicle',
-        password='D3m0n12!',
-        database='u860014930_vehicle'
+        port=3306,
+        user='u860014930_admin',
+        password='U5h&xufXlK>',
+        database='u860014930_accounting'
     )
+
     cursor = connection.cursor()
     insert_query = """
     INSERT INTO detection_history (timestamp, car_count, bus_count, truck_count, total_count, traffic_density)
