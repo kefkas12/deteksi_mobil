@@ -38,11 +38,18 @@ tracker = Tracker()
 
 # Fungsi untuk menyimpan data deteksi ke database MySQL
 def save_to_mysql(timestamp, car_count, bus_count, truck_count, total_count, traffic_density):
+    # connection = mysql.connector.connect(
+    #     host='localhost',
+    #     user='root',
+    #     password='',
+    #     database='vehicle_detection'
+    # )
     connection = mysql.connector.connect(
-        host='localhost',
-        user='root',
-        password='',
-        database='vehicle_detection'
+        host='srv1151.hstgr.io',
+        port='3306',
+        user='u860014930_vehicle',
+        password='D3m0n12!',
+        database='u860014930_vehicle'
     )
     cursor = connection.cursor()
     insert_query = """
